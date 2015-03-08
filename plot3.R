@@ -30,7 +30,11 @@ gen_plot <- {
          legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), 
          col=c("black","blue","red"),
          lty=c(1,1,1),
-         lwd=c(2.5, 2.5, 2.5))
+         lwd=c(2.5, 2.5, 2.5),
+         pt.cex=1,
+         cex=0.8,
+         seg.len=0.8)
+
 
   # Save a copy to a png file.
   dev.copy(png, filename="plot3.png", width=480, height=480, units="px")
