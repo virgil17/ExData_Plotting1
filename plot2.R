@@ -16,7 +16,8 @@ gen_plot <- {
 
   # Generate the line graph.
   plot(x=hpow$DateTime, y=hpow$Global_active_power, 
-       ylab="Global Active Power(kilowatts)", 
+       xlab="",
+       ylab="Global Active Power (kilowatts)", 
        type="n")
   lines(x=hpow$DateTime, y=hpow$Global_active_power)
 
