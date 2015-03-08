@@ -21,6 +21,7 @@ gen_plot <- {
        type="n")
   lines(x=hpow$DateTime, y=hpow$Global_active_power)
 
+  # Save a copy to a png file.
   dev.copy(png, filename="plot2.png", width=480, height=480, units="px")
   dev.off()
 }

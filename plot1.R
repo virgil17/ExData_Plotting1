@@ -20,6 +20,7 @@ gen_plot <- {
     main="Global Active Power", 
     col="red")
 
+  # Save a copy to a png file.
   dev.copy(png, filename="plot1.png", width=480, height=480, units="px")
   dev.off()
 }
