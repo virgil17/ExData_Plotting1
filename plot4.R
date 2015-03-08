@@ -44,7 +44,7 @@ gen_plot <- {
          legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), 
          col=c("black","blue","red"),
          lty=c(1,1,1),
-         lwd=c(2.5, 2.5, 2.5),
+         lwd=c(1.5, 1.5, 1.5),
          bty="n")
 
 
