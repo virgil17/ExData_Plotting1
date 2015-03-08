@@ -21,7 +21,7 @@ gen_plot <- {
 
 
   # Set up the canvas.
-  par(mfcol=c(2,2)) 
+  par(mfcol=c(2,2))
 
 
   # Generate line graph for Global Active Power.
@@ -40,13 +40,14 @@ gen_plot <- {
   lines(x=hpow$DateTime, y=hpow$Sub_metering_1, col="black")
   lines(x=hpow$DateTime, y=hpow$Sub_metering_2, col="red")
   lines(x=hpow$DateTime, y=hpow$Sub_metering_3, col="blue")
-  legend("topright", 
+  legend("topright",
          legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), 
          col=c("black","blue","red"),
          lty=c(1,1,1),
          lwd=c(1,1,1),
          pt.cex=1,
          cex=0.8,
+         seg.len=0.7,
          bty="n")
 
 
